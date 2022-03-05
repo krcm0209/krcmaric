@@ -159,3 +159,7 @@ p {
     text-transform: uppercase;
     font-weight: 300;
 }
+
+.skill-desc h3 {
+    font-weight: 300;
+}
