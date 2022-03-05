@@ -1,9 +1,24 @@
 .logo {
-    background-color: #00ab44;
     mask:url("images/krk-logo.svg") no-repeat center / contain;
     -webkit-mask:url("images/krk-logo.svg") no-repeat center / contain;
     height: 15vw;
-    max-height: 1.275in; 
+    max-height: 1.275in;
+}
+
+.cert-icon {
+    mask:url("images/verified_black_48dp.svg") no-repeat center;
+    -webkit-mask:url("images/verified_black_48dp.svg") no-repeat center;
+    width: 50px;
+    height: 50px;
+    padding: 25px;
+}
+
+.colored {
+    background-color: #00ab44;
+}
+
+#github img {
+    display: block;
 }
 
 .center {
@@ -17,48 +32,35 @@
     margin-top: 2%;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: auto;
-    padding: 1em;
-}
-
-@media (min-width: 500px) {
-    .grid-container {
-        display: grid;
-        grid-template-columns: auto auto;
-        padding: 1em;
-    }
-}
-
-@media (min-width: 750px) {
-    .grid-container {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        padding: 1em;
-    }
-}
-
-.grid-item {
-    padding: 2em;
+div.footer {
     text-align: center;
 }
 
 .skill-logo {
-    height: 15vw;
-    max-height: 1in;
+    width: 100px;
+    height: 100px;
 }
 
-.skill-logo.wide {
-    max-width: 30vw;
+.skill-item {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 20px;
+    align-items: center;
 }
 
-div.skill-item p {
-    text-align: center
+div#github {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+div#github img {
+    width: 20px;
+    height: 20px;
 }
 
 body {
-    margin: 5vw;
+    margin: 5vw 5vw 2vw 5vw;
     margin-left: auto;
     margin-right: auto;
     padding-left: 2.5vw;
@@ -107,6 +109,22 @@ h4 {
 .edu-item h4 {
     font-weight: 300;
     font-style: italic;
+}
+
+.cert-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cert-item img {
+    width: 50px;
+    height: 50px;
+    padding: 25px;
+}
+
+.cert-item h3 {
+    margin-top: 0;
 }
 
 .cert-item h4 {
